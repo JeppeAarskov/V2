@@ -1,0 +1,79 @@
+.kort
+{
+display: grid;
+width: 400px;
+height: 500px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 100px;
+transition: all 1s ease-in;
+}
+
+img
+{
+    width: 100%;
+    height: auto;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    transition: 1s;
+}
+
+.kort:hover .card5
+{
+    width: 400px;
+    transform: rotate(30deg);
+}
+
+.kort:hover .card4
+{
+    width: 400px;
+    transform: rotate(10deg) translateY(-50px) translateX(-40px);
+}
+
+.kort:hover .card3
+{
+    width: 400px;
+    transform: rotate(-5deg) translateX(-80px) translateY(-50px);
+}
+
+.kort:hover .card2
+{
+    width: 400px;
+    transform: rotate(-20deg) translateX(-100px) translateY(-50px);
+}
+
+.kort:hover .card1
+{
+    width: 400px;
+    transform: rotate(-30deg) translateX(-130px) translateY(-50px);
+}
+
+.kort .card5:hover
+{
+    width: 450px;
+    transform: rotate(30deg) translateY(-50px);
+}
+
+.kort .card4:hover
+{
+    width: 450px;
+    transform: rotate(20deg) translateY(-80px) translateX(-80px);
+}
+
+.kort .card3:hover
+{
+    width: 450px;
+    transform: rotate(-10deg) translateX(-90px) translateY(-100px);
+}
+
+.kort .card2:hover
+{
+    width: 450px;
+    transform: rotate(-30deg) translateX(-80px) translateY(-110px);
+}
+
+.kort .card1:hover
+{
+    width: 450px;
+    transform: rotate(-50deg) translateX(-80px) translateY(-110px);
+}

@@ -1,0 +1,77 @@
+.akse
+{
+    width: 900px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    background-color: white;
+    justify-content: space-evenly;
+}
+
+.objekt1
+{
+    color: aqua;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.objekt2
+{
+    color: blue;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.objekt3
+{
+    color: lightgreen;
+    background-color: lightgreen;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.objekt4
+{
+    color: red;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    transition: background-color .5s, 
+                border-radius .5s .5s,
+                border .5s 1s;
+}
+
+.objekt1:hover
+{
+    background-color: yellow;
+    color: yellow;
+}
+
+.objekt2:hover
+{
+    width: 400px;
+}
+
+.objekt3:hover
+{
+    border-radius: 100px;
+}
+
+.objekt4:hover
+{
+    background-color: blue;
+    color: blue;
+    border-radius: 50%;
+    border: 10px solid green;
+}

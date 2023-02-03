@@ -1,0 +1,126 @@
+/* Root CSS reset of margin/padding */
+:root
+{
+    --hue: 145;
+    --div-background-color: hsl(var(--hue), 100%, 77%);
+    --div-light-main-color: hsl(var(--hue), 100%, 95%);
+    --div-medium-light-main-color: hsl(var(--hue), 100%, 78%);
+    --div-dark-main-color: hsl(165, 29%, 11%);
+    --div-medium-dark-main-color: hsl(var(--hue), 25%, 34%);
+    --div-border: 2px solid hsl(var(--hue), 100%, 95%);
+    --div-background-color2: hsl(var(--hue), 100%, 99%);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* Main styling */
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--div-background-color2);
+    color: var(--div-dark-main-color);
+}
+
+/* Header styling */
+
+header
+{
+    height: 100px;
+    background-color: var(--div-medium-dark-main-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1
+{
+    color: var(--div-medium-light-main-color);
+}
+
+/* Nav/footer styling */
+
+nav
+{
+    background-color: var(--div-dark-main-color);
+    height: 40px;
+    color: var(--div-light-main-color);
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+nav ul li a
+{
+    
+    border-right: var(--div-border);
+    color: var(--div-light-main-color);
+    text-decoration: none;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img
+{
+    height: 40px;
+}
+
+/* Content area styling */
+
+main
+{
+    margin: 50px 30px;
+}
+
+h2, p
+{
+    margin-bottom: 20px;
+}
+
+footer p
+{
+    margin-bottom: 0;
+    text-align: center;
+}
+
+footer
+{
+    text-align: center;
+    background-color: var(--div-dark-main-color);
+    height: 40px;
+    color: var(--div-light-main-color);
+    line-height: 40px;
+    border-top: var(--div-light-main-color);
+}
+
+article
+{
+    display: flex;
+}
+
+.newyork
+{
+    width: 510px;
+}
+
+.liste
+{
+    display: flex;
+}
+
+a:link, a:visited
+{
+    text-decoration: none;
+}
+
+ul
+{
+    list-style-type: none;
+}

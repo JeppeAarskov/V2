@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    color: hsl(209, 10%, 100%);
+}
+
+header
+{
+    background-color: hsl(209, 50%, 30%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav
+{
+    background-color: hsl(209, 30%, 60%);
+    width: 16,6%;
+}
+
+main
+{
+    background-color: hsl(209, 20%, 80%);
+}
+
+aside
+{
+    background-color: hsl(209, 80%, 50%);
+    flex-basis: 16px;
+}
+
+footer
+{
+    background-color: hsl(209, 50%, 30%);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}

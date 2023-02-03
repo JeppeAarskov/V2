@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    color: hsl(20, 10%, 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "div"
+    "footer"
+    ;
+}
+
+section
+{
+    margin: 0 2rem;
+    grid-area: section;
+}
+
+.charlie
+{
+    grid-area: charlie;
+    display: none;
+    text-align: center;
+    padding-top: 250px;
+}
+
+header
+{
+    background-color: hsl(20, 50%, 30%);
+    grid-area: header;
+    text-align: center;
+}
+
+body > div
+{
+    background-color: hsl(20, 30%, 40%);
+}
+
+.albert
+{
+    background-color: hsl(20, 80%, 50%);
+    grid-area: albert;
+    display: none;
+    text-align: center;
+    padding-top: 250px;
+}
+
+nav
+{
+    background-color: hsl(20, 30%, 60%);
+    grid-area: nav;
+    text-align: center;
+}
+
+main
+{
+    background-color: hsl(20, 20%, 80%);
+    grid-area: main;
+    padding-top: 50px;
+    padding: 30px;
+}
+
+div
+{
+    grid-area: div;
+    display: block;
+    text-align: center;
+}
+
+footer
+{
+    background-color: hsl(20, 50%, 30%);
+    grid-area: footer;
+    text-align: center;
+}
+
+h2
+{
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px){
+    body
+    {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "header header header header header"
+        "nav nav nav div div"
+        "section section section section section"
+        "albert main main charlie charlie"
+        "footer footer footer footer footer"
+        ;
+    }
+
+    .charlie
+    {
+    display: block;
+    background-color: hsl(20, 80%, 50%);
+    }
+
+    .albert
+    {
+    display: block;
+    }
+
+    header
+    {
+        height: 60px;
+        padding-top: 40px;
+    }
+
+    footer
+    {
+        height: 80px;
+        padding-top: 40px;
+    }
+}
